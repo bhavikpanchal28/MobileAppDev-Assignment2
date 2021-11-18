@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#D5E5F6"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cousine"
+        android:padding="15dp"
+        android:text="Enter a Specific Locations Information:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location ID:"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:hint="Latitude"
+        android:inputType="numberDecimal"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitude"
+        android:hint="Longitude"
+        android:inputType="numberDecimal"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitude"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="#912323"
+        android:text="Submit \n (Must have its own ID)"
+        android:textSize="12dp"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="#912323"
+        android:text="Update \ (Must include ID)"
+        android:textSize="12dp"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="#912323"
+        android:text="Delete Existing Data \n (only ID is needed to delete)"
+        android:textSize="12dp"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="#912323"
+        android:text="View All Saved Locations"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/allerta"
+        android:text="Click below to recieve information on your current location!!!"
+        android:textAlignment="center"
+        android:textColor="#03337C"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Current Location"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#055116"
+        android:backgroundTint="@color/teal_700"
+        android:foregroundTint="#770808"
+        android:text="Get Location"
+        android:textColorLink="#550B0B" />
+
+
+</LinearLayout>
