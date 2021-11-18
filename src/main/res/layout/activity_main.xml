@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/allerta"
-        android:text="Click below to recieve information on your current location!!!"
+        android:text="Click below to recieve information on a random location!!!"
         android:textAlignment="center"
         android:textColor="#03337C"
         android:textSize="18dp" />
@@ -112,7 +112,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Current Location"
+        android:text="Random Location"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
