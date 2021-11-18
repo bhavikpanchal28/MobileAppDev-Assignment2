@@ -63,7 +63,7 @@
         android:layout_marginTop="15dp"
         android:background="@color/teal_700"
         android:backgroundTint="#912323"
-        android:text="Submit \n (Must have its own ID)"
+        android:text="Submit \n (Each Location Must have its own ID)"
         android:textSize="12dp"/>
     <Button
         android:id="@+id/btnUpdate"
@@ -73,7 +73,7 @@
         android:layout_marginTop="15dp"
         android:background="@color/teal_700"
         android:backgroundTint="#912323"
-        android:text="Update \ (Must include ID)"
+        android:text="Update \n (Must include ID)"
         android:textSize="12dp"/>
     <Button
         android:id="@+id/btnDelete"
